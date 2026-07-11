@@ -18,9 +18,7 @@ jobs:
         node-version: '20'
         
     - name: Install dependencies
-      working-directory: ./test-folder # Change this to your folder name
       run: npm install
       
     - name: Run tests
-      working-directory: ./test-folder # Change this to your folder name
       run: npm test
