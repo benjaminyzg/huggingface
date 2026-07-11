@@ -1,6 +1,6 @@
 {
   "name": "my-first-project",
   "scripts": {
-    "test": "echo 'No tests yet!'"
+  "test": "echo \"Error: no test specified\" && exit 0"
   }
 }
