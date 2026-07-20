@@ -22,7 +22,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           # Configure Git credentials using the HF token
-          git remote add hf https://x-token-auth:$HF_TOKEN@huggingface.co/benjaminy/white_latte
+          git remote set-url hf https://x-token-auth:$HF_TOKEN@huggingface.co/benjaminy_zg/white_latte || git remote add hf https://x-token-auth:$HF_TOKEN@huggingface.co/benjaminy_zg/white_latte
           
           # Force push to overwrite the target HF repo branch with your Xclean GitHub history
           git push --force hf main
